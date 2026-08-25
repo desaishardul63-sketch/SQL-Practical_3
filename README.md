@@ -5,6 +5,9 @@ The course table stores course information and also connects to departments.
 The enrollment table records which students are enrolled in which courses, along with their semester and grade. 
 It uses a composite primary key consisting of roll_no, course_id, and semester. 
 Foreign keys maintain relationships and ensure data consistency between all tables.
+
+Normalization:
+
 Normalization is a process of arranging a database into tables such that unnecessary repetition of data does not take place and consistency is maintained. 
 In the following database design, the department table holds information about department, the student table holds information about the student, the course table holds information about the course, and the enrollment table helps in linking the student to the course.
 For 1NF, each attribute should have a single atomic value and there should be no repeating groups, which is achieved in your database because courses are not present as repeating values within the student table.
